@@ -1,11 +1,13 @@
 #include <stdio.h>
-void ft_ft(int *nbr);
+int ft_strlen(char *str);
 
 int main(void)
 {
-	int nbr;
+	char	str[] = "Hello 42 World";
 	
-	ft_ft(&nbr);
+	printf("\nValeur de str AVANT de passer par fonction: '%s'\n", str);
+	
+	printf("\nresultat de ft_strlen(str) : %d\n", ft_strlen(str));
+	printf("\n");
 
-	printf("%d", nbr);
 }

@@ -1,11 +1,19 @@
 #include <stdio.h>
-void ft_ft(int *nbr);
+void ft_ultimate_div_mod(int *a, int *b);
 
 int main(void)
 {
-	int nbr;
-	
-	ft_ft(&nbr);
+	int	a;
+	int	b;
 
-	printf("%d", nbr);
+	a = 10;
+	b = 3;
+	
+	printf("Valeur de a AVANT de de passer par fonction: %d\n", a);
+	printf("Valeur de b AVANT de de passer par fonction: %d\n", b);
+	
+	ft_ultimate_div_mod(&a, &b);
+	
+	printf("\nValeur de a APRES de de passer par fonction: %d\n", a);
+	printf("Valeur de b APRES de de passer par fonction: %d\n", b);
 }
