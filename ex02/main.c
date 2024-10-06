@@ -1,11 +1,19 @@
 #include <stdio.h>
-void ft_ft(int *nbr);
+
+void	ft_swap(int *a, int *b);
 
 int main(void)
 {
-	int nbr;
-	
-	ft_ft(&nbr);
+	int	num1;
+	int	num2;
 
-	printf("%d", nbr);
+	num1 = 10;
+	num2 = 5;
+	
+	printf("Valeur de a AVANT de de passer par fonction: %d\n", num1);
+	printf("Valeur de b AVANT de de passer par fonction: %d\n", num2);
+	ft_swap(&num1, &num2);
+	printf("\nValeur de a APRES de de passer par fonction: %d\n", num1);
+	printf("Valeur de b APRES de de passer par fonction: %d\n", num2);
+	return (0);
 }
